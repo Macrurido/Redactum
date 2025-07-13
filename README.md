@@ -14,7 +14,7 @@ Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
-Morefi © 2024 by Hugo Aguirre Villaseñor is licensed under a
+Redactum © 2025 by Hugo Aguirre Villaseñor is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
 
 [![CC BY 4.0][cc-by-image]][cc-by]

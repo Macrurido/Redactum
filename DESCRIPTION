@@ -1,6 +1,6 @@
 Package: Redactum
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Tools to simplify writing compelling manuscripts in Spanish
 Version: 0.1.0
 Authors@R: c(
     person(
