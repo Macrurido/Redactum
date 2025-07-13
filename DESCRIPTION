@@ -1,0 +1,20 @@
+Package: Redactum
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Hugo", "Aguirre-Villaseñor",
+      email = "hugo.aguirre@imipas.gob.mx",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-9846-0915")
+    )
+  )
+Description: This package provides tools to simplify writing compelling manuscripts in Spanish, enhancing efficiency and effectiveness.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
