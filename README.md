@@ -26,3 +26,50 @@ Redactum © 2025 by Hugo Aguirre Villaseñor is licensed under a
 ## Redactum
 
 This package provides tools to simplify writing compelling manuscripts in Spanish, enhancing efficiency and effectiveness.
+
+# fn_enlista
+
+It is a function that inserts commas between the elements of a vector, using 'and' for the last element unless the last word begins with 'i' or 'I', in which case it uses 'e'.
+
+The function requires defining:
+
+    * x A vector that contains multiple elements.
+
+It returns A vector that inserts a comma after each element, adds
+*y* to the last element, and if the last element is a word
+starting with *i*, it instead adds *e*.
+
+ ## Examples
+
+The last word does not begin with "I".
+```{r }
+x <- c("Pedro", "Juan", "Mario", "Emilio", "Iker", "Hugo")
+xx <- fn_enlista(x)
+```
+
+Combine it with paste0().
+```{r }
+paste0("Los amigos de Armando son ", xx,".")
+```
+
+The last word begins  with "I".
+```{r }
+x <- c("Pedro", "Juan", "Mario", "Emilio", "Iker")
+xx <- fn_enlista(x)
+```
+
+Combine it with paste0().
+```{r }
+paste0("Los amigos de Armando son ", xx,".")
+```
+
+The last word begins  with "i".
+```{r }
+x <- c("península", "cordillera", "isla")
+xx <- fn_enlista(x)
+```
+
+Combine it with paste0().
+```{r }
+paste0("Los accidentes geográficos encontrados son: ", xx,".")
+```
