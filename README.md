@@ -53,9 +53,13 @@ paste0("Los amigos de Armando son ", xx,".")
 ```
 
 The last word begins  with "I".
+
+
+
 ```{r }
 x <- c("Pedro", "Juan", "Mario", "Emilio", "Iker")
 xx <- fn_enlista(x)
+xx
 ```
 
 Combine it with paste0().
@@ -67,9 +71,11 @@ The last word begins  with "i".
 ```{r }
 x <- c("península", "cordillera", "isla")
 xx <- fn_enlista(x)
+xx
 ```
 
 Combine it with paste0().
 ```{r }
 paste0("Los accidentes geográficos encontrados son: ", xx,".")
+xx
 ```

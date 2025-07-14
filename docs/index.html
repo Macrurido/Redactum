@@ -67,6 +67,22 @@
 </h2>
 <p>This package provides tools to simplify writing compelling manuscripts in Spanish, enhancing efficiency and effectiveness.</p>
 </div>
+<div class="section level1">
+<div class="page-header"><h1 id="fn_enlista">fn_enlista<a class="anchor" aria-label="anchor" href="#fn_enlista"></a>
+</h1></div>
+<p>It is a function that inserts commas between the elements of a vector, using ‘and’ for the last element unless the last word begins with ‘i’ or ‘I’, in which case it uses ‘e’.</p>
+<p>The function requires defining:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="sc">*</span> x A vector that contains multiple elements.</span></code></pre></div>
+<p>It returns A vector that inserts a comma after each element, adds <em>y</em> to the last element, and if the last element is a word starting with <em>i</em>, it instead adds <em>e</em>.</p>
+<p>## Examples</p>
+<p>The last word does not begin with “I”. <code>{r } x &lt;- c("Pedro", "Juan", "Mario", "Emilio", "Iker", "Hugo") xx &lt;- fn_enlista(x)</code></p>
+<p>Combine it with paste0(). <code>{r } paste0("Los amigos de Armando son ", xx,".")</code></p>
+<p>The last word begins with “I”.</p>
+<p><code>{r } x &lt;- c("Pedro", "Juan", "Mario", "Emilio", "Iker") xx &lt;- fn_enlista(x) xx</code></p>
+<p>Combine it with paste0(). <code>{r } paste0("Los amigos de Armando son ", xx,".")</code></p>
+<p>The last word begins with “i”. <code>{r } x &lt;- c("península", "cordillera", "isla") xx &lt;- fn_enlista(x) xx</code></p>
+<p>Combine it with paste0(). <code>{r } paste0("Los accidentes geográficos encontrados son: ", xx,".") xx</code></p>
+</div>
 
   </div>
 
