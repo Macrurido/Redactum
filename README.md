@@ -1,10 +1,10 @@
 Redactum: Simplifying the writing of engaging manuscripts in Spanish.
 ================
 Hugo Aguirre Villaseñor
-13 julio 2025
+21 julio 2025
 
 Redactum
-<a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/logo.png" align="right" height="139" alt="Redactum website" /></a>
+<a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/Redactum.png" align="right" height="139" alt="Redactum website" /></a>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -47,7 +47,8 @@ install_github("Macrurido/Redactum")
 
 It is a function that inserts commas between the elements of a vector,
 using ‘and’ for the last element unless the last word begins with ‘i’ or
-‘I’, in which case it uses ‘e’.
+‘I’, in which case it uses ‘e’. In the context of numerical vectors, the
+letter ‘y’ is placed before the final word.
 
 The function requires defining:
 
@@ -112,3 +113,39 @@ xx
 ```
 
     ## [1] "Los accidentes geográficos encontrados son: península, cordillera e isla."
+
+The last word starts with a character that is not a letter.
+
+``` r
+x <- c("península", "cordillera", "123")
+xx <- Redactum::fn_enlista(x)
+xx
+```
+
+    ## [1] "península, cordillera y 123"
+
+``` r
+# Example: combine it with paste0().
+xx <- paste0("Los accidentes geográficos encontrados son: ", xx,".")
+xx
+```
+
+    ## [1] "Los accidentes geográficos encontrados son: península, cordillera y 123."
+
+The vector consists of numeric values.
+
+``` r
+x <- c(345, 678, 123, 0)
+xx <- Redactum::fn_enlista(x)
+xx
+```
+
+    ## [1] "345, 678, 123 y 0"
+
+``` r
+# Example: combine it with paste0().
+xx <- paste0("Los accidentes geográficos estan numerados como: ", xx,".")
+xx
+```
+
+    ## [1] "Los accidentes geográficos estan numerados como: 345, 678, 123 y 0."

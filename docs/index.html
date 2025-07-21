@@ -59,7 +59,7 @@
 <div class="section level1">
 <div class="page-header"><h1 id="redactum-simplifying-the-writing-of-engaging-manuscripts-in-spanish">Redactum: Simplifying the writing of engaging manuscripts in Spanish.<a class="anchor" aria-label="anchor" href="#redactum-simplifying-the-writing-of-engaging-manuscripts-in-spanish"></a>
 </h1></div>
-<p>Hugo Aguirre Villaseñor 13 julio 2025</p>
+<p>Hugo Aguirre Villaseñor 21 julio 2025</p>
 <p>Redactum <a href="https://github.com/Macrurido/Redactum/" class="external-link"><img src="reference/figures/logo.png" align="right" height="139" alt="Redactum website"></a></p>
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <p>Shield: <a href="http://creativecommons.org/licenses/by/4.0/" class="external-link"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="CC BY 4.0"></a></p>
@@ -87,7 +87,7 @@
 <div class="section level1">
 <h1 id="fn_enlista">fn_enlista<a class="anchor" aria-label="anchor" href="#fn_enlista"></a>
 </h1>
-<p>It is a function that inserts commas between the elements of a vector, using ‘and’ for the last element unless the last word begins with ‘i’ or ‘I’, in which case it uses ‘e’.</p>
+<p>It is a function that inserts commas between the elements of a vector, using ‘and’ for the last element unless the last word begins with ‘i’ or ‘I’, in which case it uses ‘e’. In the context of numerical vectors, the letter ‘y’ is placed before the final word.</p>
 <p>The function requires defining:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="sc">*</span> x A vector that contains multiple elements.</span></code></pre></div>
 <p>It returns A vector that inserts a comma after each element, adds <em>y</em> to the last element, and if the last element is a word starting with <em>i</em>, it instead adds <em>e</em>.</p>
@@ -125,6 +125,28 @@
 <span><span class="va">xx</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"Los accidentes geográficos encontrados son: "</span>, <span class="va">xx</span>,<span class="st">"."</span><span class="op">)</span></span>
 <span><span class="va">xx</span></span></code></pre></div>
 <div class="sourceCode" id="cb15"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="do">## [1] "Los accidentes geográficos encontrados son: península, cordillera e isla."</span></span></code></pre></div>
+<p>The last word starts with a character that is not a letter.</p>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"península"</span>, <span class="st">"cordillera"</span>, <span class="st">"123"</span><span class="op">)</span></span>
+<span><span class="va">xx</span> <span class="op">&lt;-</span> <span class="fu">Redactum</span><span class="fu">::</span><span class="fu"><a href="reference/fn_enlista.html">fn_enlista</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
+<span><span class="va">xx</span></span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="do">## [1] "península, cordillera y 123"</span></span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Example: combine it with paste0().</span></span>
+<span><span class="va">xx</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"Los accidentes geográficos encontrados son: "</span>, <span class="va">xx</span>,<span class="st">"."</span><span class="op">)</span></span>
+<span><span class="va">xx</span></span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="do">## [1] "Los accidentes geográficos encontrados son: península, cordillera y 123."</span></span></code></pre></div>
+<p>The vector consists of numeric values.</p>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">345</span>, <span class="fl">678</span>, <span class="fl">123</span>, <span class="fl">0</span><span class="op">)</span></span>
+<span><span class="va">xx</span> <span class="op">&lt;-</span> <span class="fu">Redactum</span><span class="fu">::</span><span class="fu"><a href="reference/fn_enlista.html">fn_enlista</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
+<span><span class="va">xx</span></span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="do">## [1] "345, 678, 123 y 0"</span></span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Example: combine it with paste0().</span></span>
+<span><span class="va">xx</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"Los accidentes geográficos estan numerados como: "</span>, <span class="va">xx</span>,<span class="st">"."</span><span class="op">)</span></span>
+<span><span class="va">xx</span></span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="do">## [1] "Los accidentes geográficos estan numerados como: 345, 678, 123 y 0."</span></span></code></pre></div>
 </div>
 
   </div>
