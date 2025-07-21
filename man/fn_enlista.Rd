@@ -33,6 +33,14 @@ This function is included in the Redactum package.
  # The last word begins  with "i".
  x <- c("península", "cordillera", "isla")
  xx <- fn_enlista(x)
+
+ # The last word starts with a character that is not a letter.
+ x <- c("península", "cordillera", "123")
+ xx <- fn_enlista(x)
+
+ # The vector consists of numeric values.
+   x <- c(345, 678, 123, 0)
+   xx <- fn_enlista(x)
  }
 
 }

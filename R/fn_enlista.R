@@ -1,6 +1,6 @@
 #' fn_enlista
 #'
-# It is a function that inserts commas between the elements of a vector, using 'and' for the last element unless the last word begins with 'i' or 'I', in which case it uses 'e'.
+# It is a function that inserts commas between the elements of a vector, using 'and' for the last element unless the last word begins with 'i' or 'I', in which case it uses 'e'. In the context of numerical vectors, the letter 'y' is placed before the final word.
 #'
 #' This function is included in the Redactum package.
 #'
@@ -26,20 +26,29 @@
 #'  # The last word begins  with "i".
 #'  x <- c("península", "cordillera", "isla")
 #'  xx <- fn_enlista(x)
+#'
+#'  # The last word starts with a character that is not a letter.
+#'  x <- c("península", "cordillera", "123")
+#'  xx <- fn_enlista(x)
+#'
+#'  # The vector consists of numeric values.
+#'    x <- c(345, 678, 123, 0)
+#'    xx <- fn_enlista(x)
 #'  }
 #'
 #' @export
 fn_enlista <- function(x){
-                  if(startsWith(x[length(x)], "I") |
-                     startsWith(x[length(x)], "i"))
-                    {
-                      idiom <- " e "
-                    }else{
-                      idiom <- " y "
-                  } # End if
+                          if(!grepl("^[iI]", x[length(x)])|
+                              grepl("^[0-9]", x[length(x)]))
+                            {
+                              idiom <- " y "
+                            }else{
+                              idiom <- " e "
+                            } # End if
 
-          vector <- paste(paste(x[-length(x)],
-                                collapse = ", "),
-                          x[length(x)],
-                          sep = idiom)
+  vector <- paste(paste(x[-length(x)],
+                        collapse = ", "),
+                  x[length(x)],
+                  sep = idiom)
+  return(vector)
 }
