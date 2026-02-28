@@ -1,6 +1,6 @@
 Package: Redactum
 Type: Package
-Title: Tools to simplify writing compelling manuscripts in Spanish
+Title: Tools to simplify writing compelling manuscripts in Spanish and in other languages.
 Version: 0.1.0
 Authors@R: c(
     person(
@@ -10,7 +10,7 @@ Authors@R: c(
       comment = c(ORCID = "0000-0002-9846-0915")
     )
   )
-Description: This package provides tools to simplify writing compelling manuscripts in Spanish, enhancing efficiency and effectiveness.
+Description: This package offers tools to streamline the writing of manuscripts in Spanish and in other languages, making it a versatile choice for all your writing requirements.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -18,3 +18,4 @@ RoxygenNote: 7.3.3
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+
