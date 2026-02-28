@@ -58,7 +58,7 @@ It returns A vector that inserts a comma after each element, adds
 *y* to the last element, and if the last element is a word
 starting with *i*, it instead adds *e*.
 
- ## Examples
+## Examples
 
 The last word does not begin with "I".
 ```{r }
@@ -114,3 +114,45 @@ xx
 xx <- paste0("Los accidentes geográficos estan numerados como: ", xx,".")
 xx
 ```
+# n_cient
+
+Abbreviated scientific name
+
+The abbreviated name is derived from the scientific name. To create the abbreviation, the first letter of the genus is taken, written in uppercase, and followed by a period. The specific name is added after a space in the scientific name.
+
+Within the function, a condition is established. If the scientific name refers to a species that is not specified under a particular genus, such as Hydrolagus sp., or to multiple species within a genus, like Hydrolagus spp., the name will not be abbreviated. However, if the scientific name designates a specific species, it will be modified; for instance, Hydrolagus melanophasma will be abbreviated to H. melanophasma.
+
+The function operates correctly with or without periods in abbreviations, such as "sp" or "sp."
+
+## Examples
+
+Abbreviation used for scientific names.
+
+```{r}
+n_cient("Homo sapiens")
+
+name <- "Hydrolagus melanophasma"
+n_cient(name)
+```
+
+Unspecified species within a genus, using the abbreviation "sp." or "sp" with or without a period.
+
+```{r}
+# With a period
+n_cient("Hydrolagus sp.")
+
+# Without a period
+n_cient("Hydrolagus sp")
+```
+
+Unspecified species within a genus, using the abbreviation "spp." or "spp" with or without a period.
+
+```{r}
+# With a period
+n_cient("Hydrolagus spp.")
+
+# Without a period
+n_cient("Hydrolagus spp")
+```
+
+
