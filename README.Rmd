@@ -26,7 +26,7 @@ Redactum © 2025 by Hugo Aguirre Villaseñor is licensed under a
 
 ## Redactum
 
-This package provides tools to enhance manuscript writing in Spanish, boosting your efficiency and effectiveness. Several features are also applicable to other languages, making it a versatile choice for all your writing requirements.
+This package offers tools to streamline the writing of manuscripts in Spanish and in other languages, making it a versatile choice for all your writing requirements.
 
 ## Installation
 
