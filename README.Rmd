@@ -1,5 +1,5 @@
 ---
-title: "Redactum: Simplifying the writing of engaging manuscripts in Spanish."
+title: "Redactum: Simplifying the writing of manuscripts in Spanish and other languages."
 author: "Hugo Aguirre Villaseñor"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output: rmarkdown::github_document
@@ -43,6 +43,10 @@ or using the **devtools** package
 ``` r
 library(devtools)
 install_github("Macrurido/Redactum")
+```
+
+```{r}
+library(Redactum)
 ```
 
 # fn_enlista
