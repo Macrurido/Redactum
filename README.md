@@ -2,7 +2,7 @@ Redactum: Simplifying the writing of manuscripts in Spanish and other
 languages.
 ================
 Hugo Aguirre Villaseñor
-27 febrero 2026
+01 marzo 2026
 
 Redactum
 <a href="https://github.com/Macrurido/Redactum/"><img src="main/images/Redactum.png" align="right" height="139" alt="Redactum website" /></a>

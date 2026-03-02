@@ -1,10 +1,11 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>/404.html</loc></url>
-<url><loc>/authors.html</loc></url>
-<url><loc>/index.html</loc></url>
-<url><loc>/LICENSE-text.html</loc></url>
-<url><loc>/LICENSE.html</loc></url>
-<url><loc>/reference/fn_enlista.html</loc></url>
-<url><loc>/reference/index.html</loc></url>
+<url><loc>https://macrurido.github.io/Redactum/404.html</loc></url>
+<url><loc>https://macrurido.github.io/Redactum/authors.html</loc></url>
+<url><loc>https://macrurido.github.io/Redactum/index.html</loc></url>
+<url><loc>https://macrurido.github.io/Redactum/LICENSE-text.html</loc></url>
+<url><loc>https://macrurido.github.io/Redactum/LICENSE.html</loc></url>
+<url><loc>https://macrurido.github.io/Redactum/reference/fn_enlista.html</loc></url>
+<url><loc>https://macrurido.github.io/Redactum/reference/index.html</loc></url>
+<url><loc>https://macrurido.github.io/Redactum/reference/n_cient.html</loc></url>
 </urlset>
 
