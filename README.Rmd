@@ -6,12 +6,19 @@ output: rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
 ```
 
-# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="main/images/Redactum.png" align="right" height="140" /></a>
+# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="blob/main/images/Redactum.png" align="right" height="140" /></a>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+> meek-ROPE em el
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 

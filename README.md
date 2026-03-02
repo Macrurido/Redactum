@@ -4,9 +4,11 @@ languages.
 Hugo Aguirre Villaseñor
 01 marzo 2026
 
-# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="main/images/Redactum.png" align="right" height="140" /></a>
+# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="blob/main/images/Redactum.png" align="right" height="140" /></a>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+> meek-ROPE em el
 
 Shield: [![CC BY
 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
@@ -71,17 +73,13 @@ The last word does not begin with “I”.
 x <- c("Pedro", "Juan", "Mario", "Emilio", "Iker", "Hugo")
 xx <- Redactum::fn_enlista(x)
 xx
-```
+#> [1] "Pedro, Juan, Mario, Emilio, Iker y Hugo"
 
-    ## [1] "Pedro, Juan, Mario, Emilio, Iker y Hugo"
-
-``` r
 # Example: combine it with paste0().
 xx <- paste0("Los amigos de Armando son ", xx,".")
 xx
+#> [1] "Los amigos de Armando son Pedro, Juan, Mario, Emilio, Iker y Hugo."
 ```
-
-    ## [1] "Los amigos de Armando son Pedro, Juan, Mario, Emilio, Iker y Hugo."
 
 The last word begins with “I”.
 
@@ -89,17 +87,13 @@ The last word begins with “I”.
 x <- c("Pedro", "Juan", "Mario", "Emilio", "Iker")
 xx <- Redactum::fn_enlista(x)
 xx
-```
+#> [1] "Pedro, Juan, Mario, Emilio e Iker"
 
-    ## [1] "Pedro, Juan, Mario, Emilio e Iker"
-
-``` r
 # Example: combine it with paste0().
 xx <- paste0("Los amigos de Armando son ", xx,".")
 xx
+#> [1] "Los amigos de Armando son Pedro, Juan, Mario, Emilio e Iker."
 ```
-
-    ## [1] "Los amigos de Armando son Pedro, Juan, Mario, Emilio e Iker."
 
 The last word begins with “i”.
 
@@ -107,17 +101,13 @@ The last word begins with “i”.
 x <- c("península", "cordillera", "isla")
 xx <- Redactum::fn_enlista(x)
 xx
-```
+#> [1] "península, cordillera e isla"
 
-    ## [1] "península, cordillera e isla"
-
-``` r
 # Example: combine it with paste0().
 xx <- paste0("Los accidentes geográficos encontrados son: ", xx,".")
 xx
+#> [1] "Los accidentes geográficos encontrados son: península, cordillera e isla."
 ```
-
-    ## [1] "Los accidentes geográficos encontrados son: península, cordillera e isla."
 
 The last word starts with a character that is not a letter.
 
@@ -125,17 +115,13 @@ The last word starts with a character that is not a letter.
 x <- c("península", "cordillera", "123")
 xx <- Redactum::fn_enlista(x)
 xx
-```
+#> [1] "península, cordillera y 123"
 
-    ## [1] "península, cordillera y 123"
-
-``` r
 # Example: combine it with paste0().
 xx <- paste0("Los accidentes geográficos encontrados son: ", xx,".")
 xx
+#> [1] "Los accidentes geográficos encontrados son: península, cordillera y 123."
 ```
-
-    ## [1] "Los accidentes geográficos encontrados son: península, cordillera y 123."
 
 The vector consists of numeric values.
 
@@ -143,17 +129,13 @@ The vector consists of numeric values.
 x <- c(345, 678, 123, 0)
 xx <- Redactum::fn_enlista(x)
 xx
-```
+#> [1] "345, 678, 123 y 0"
 
-    ## [1] "345, 678, 123 y 0"
-
-``` r
 # Example: combine it with paste0().
 xx <- paste0("Los accidentes geográficos estan numerados como: ", xx,".")
 xx
+#> [1] "Los accidentes geográficos estan numerados como: 345, 678, 123 y 0."
 ```
-
-    ## [1] "Los accidentes geográficos estan numerados como: 345, 678, 123 y 0."
 
 # n_cient
 
@@ -181,16 +163,12 @@ Abbreviation used for scientific names.
 
 ``` r
 n_cient("Homo sapiens")
-```
+#> [1] "H. sapiens"
 
-    ## [1] "H. sapiens"
-
-``` r
 name <- "Hydrolagus melanophasma"
 n_cient(name)
+#> [1] "H. melanophasma"
 ```
-
-    ## [1] "H. melanophasma"
 
 Unspecified species within a genus, using the abbreviation “sp.” or “sp”
 with or without a period.
@@ -198,16 +176,12 @@ with or without a period.
 ``` r
 # With a period
 n_cient("Hydrolagus sp.")
-```
+#> [1] "Hydrolagus sp."
 
-    ## [1] "Hydrolagus sp."
-
-``` r
 # Without a period
 n_cient("Hydrolagus sp")
+#> [1] "Hydrolagus sp"
 ```
-
-    ## [1] "Hydrolagus sp"
 
 Unspecified species within a genus, using the abbreviation “spp.” or
 “spp” with or without a period.
@@ -215,13 +189,9 @@ Unspecified species within a genus, using the abbreviation “spp.” or
 ``` r
 # With a period
 n_cient("Hydrolagus spp.")
-```
+#> [1] "Hydrolagus spp."
 
-    ## [1] "Hydrolagus spp."
-
-``` r
 # Without a period
 n_cient("Hydrolagus spp")
+#> [1] "Hydrolagus spp"
 ```
-
-    ## [1] "Hydrolagus spp"
