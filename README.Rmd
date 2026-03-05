@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 
 # Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="blob/main/figures/Redactum.png" align="right" height="140" /></a>
 
+# pkgname <img src="man/figures/logo.png" align="right" />
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 > meek-ROPE em el
