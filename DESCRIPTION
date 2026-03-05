@@ -16,6 +16,9 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.3
 Suggests: 
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 URL: https://macrurido.github.io/Redactum/
+VignetteBuilder: knitr

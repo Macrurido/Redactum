@@ -14,10 +14,12 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/Redactum.png" align="right" height="140" /></a>
+# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="main/figures/Redactum.png" align="right" height="140" /></a>
 
-<!-- # pkgname <img src="man/figures/Redactum.png" align="right" /> -->
+# pkgname <img src="main/figures/Redactum.png" align="right" />
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+> meek-ROPE em el
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 

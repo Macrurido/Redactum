@@ -1,0 +1,95 @@
+---
+title: "fn_enlista {Redactum}"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{fn_enlista}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>")
+options(rmarkdown.html_vignette.check_title = FALSE)
+```
+
+```{r setup}
+library(Redactum)
+```
+
+It is a function that inserts commas between the elements of a vector,
+using ‘and’ for the last element unless the last word begins with ‘i’ or
+‘I’, in which case it uses ‘e’. In the context of numerical vectors, the
+letter ‘y’ is placed before the final word.
+
+The function requires defining:
+
+    * x A vector that contains multiple elements.
+
+It returns A vector that inserts a comma after each element, adds *y* to
+the last element, and if the last element is a word starting with *i*,
+it instead adds *e*.
+
+## Examples
+
+The last word does not begin with “I”.
+
+```{r}
+x <- c("Pedro", "Juan", "Mario", "Emilio", "Iker", "Hugo")
+xx <- Redactum::fn_enlista(x)
+xx
+
+# Example: combine it with paste0().
+xx <- paste0("Los amigos de Armando son ", xx,".")
+xx
+```
+
+The last word begins with “I”.
+
+```{r}
+x <- c("Pedro", "Juan", "Mario", "Emilio", "Iker")
+xx <- Redactum::fn_enlista(x)
+xx
+
+# Example: combine it with paste0().
+xx <- paste0("Los amigos de Armando son ", xx,".")
+xx
+```
+
+The last word begins with “i”.
+
+```{r}
+x <- c("península", "cordillera", "isla")
+xx <- Redactum::fn_enlista(x)
+xx
+
+# Example: combine it with paste0().
+xx <- paste0("Los accidentes geográficos encontrados son: ", xx,".")
+xx
+```
+
+The last word starts with a character that is not a letter.
+
+```{r}
+x <- c("península", "cordillera", "123")
+xx <- Redactum::fn_enlista(x)
+xx
+
+# Example: combine it with paste0().
+xx <- paste0("Los accidentes geográficos encontrados son: ", xx,".")
+xx
+```
+
+The vector consists of numeric values.
+
+```{r}
+x <- c(345, 678, 123, 0)
+xx <- Redactum::fn_enlista(x)
+xx
+
+# Example: combine it with paste0().
+xx <- paste0("Los accidentes geográficos estan numerados como: ", xx,".")
+xx
+```
+
