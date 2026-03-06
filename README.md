@@ -4,7 +4,7 @@ languages.
 Hugo Aguirre Villaseñor
 05 marzo 2026
 
-# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/Redactum.png" align="right" height="80" /></a>
+# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/Redactum.png" align="right" height="180" /></a>
 
 <!-- # pkgname <img src="man/figures/Redactum.png" align="right" /> -->
 
@@ -40,11 +40,11 @@ pak::pak("Macrurido/Redactum")
 #> 
 #> → Will update 1 package.
 #> → Will download 1 package with unknown size.
-#> + Redactum 0.1.0 → 0.1.0 [bld][cmp][dl] (GitHub: 1b9a3eb)
+#> + Redactum 0.1.0 → 0.1.0 [bld][cmp][dl] (GitHub: aefd367)
 #> ℹ Getting 1 pkg with unknown size
 #> ✔ Cached copy of Redactum 0.1.0 (source) is the latest build
-#> ✔ Installed Redactum 0.1.0 (github::Macrurido/Redactum@1b9a3eb) (84ms)
-#> ✔ 1 pkg: upd 1 [5.6s]
+#> ✔ Installed Redactum 0.1.0 (github::Macrurido/Redactum@aefd367) (86ms)
+#> ✔ 1 pkg: upd 1 [5.8s]
 ```
 
 or using the **devtools** package
@@ -53,7 +53,7 @@ or using the **devtools** package
 library(devtools)
 install_github("Macrurido/Redactum")
 #> Using GitHub PAT from the git credential store.
-#> Skipping install of 'Redactum' from a github remote, the SHA1 (1b9a3eba) has not changed since last install.
+#> Skipping install of 'Redactum' from a github remote, the SHA1 (aefd3672) has not changed since last install.
 #>   Use `force = TRUE` to force installation
 ```
 

@@ -1,6 +1,6 @@
 Package: Redactum
 Type: Package
-Title: Tools to simplify writing compelling manuscripts in Spanish and in other languages.
+Title: Tools to simplify writing compelling manuscripts in Spanish and in other languages
 Version: 0.1.0
 Authors@R: c(
     person(
