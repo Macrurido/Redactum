@@ -25,9 +25,9 @@ letter ‘y’ is placed before the final word.
 
 The function requires defining:
 
-    * x A vector that contains multiple elements.
+    x A vector that contains multiple elements.
 
-It returns A vector that inserts a comma after each element, adds *y* to
+It returns a vector that inserts a comma after each element, adds *y* to
 the last element, and if the last element is a word starting with *i*,
 it instead adds *e*.
 

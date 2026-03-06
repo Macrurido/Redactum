@@ -4,7 +4,7 @@ languages.
 Hugo Aguirre Villaseñor
 05 marzo 2026
 
-# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/Redactum.png" align="right" height="140" /></a>
+# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/Redactum.png" align="right" height="80" /></a>
 
 <!-- # pkgname <img src="man/figures/Redactum.png" align="right" /> -->
 
@@ -37,6 +37,14 @@ Using the **pak** package
 ``` r
 # install.packages("pak")
 pak::pak("Macrurido/Redactum")
+#> 
+#> → Will update 1 package.
+#> → Will download 1 package with unknown size.
+#> + Redactum 0.1.0 → 0.1.0 [bld][cmp][dl] (GitHub: 1b9a3eb)
+#> ℹ Getting 1 pkg with unknown size
+#> ✔ Cached copy of Redactum 0.1.0 (source) is the latest build
+#> ✔ Installed Redactum 0.1.0 (github::Macrurido/Redactum@1b9a3eb) (84ms)
+#> ✔ 1 pkg: upd 1 [5.6s]
 ```
 
 or using the **devtools** package
@@ -44,13 +52,21 @@ or using the **devtools** package
 ``` r
 library(devtools)
 install_github("Macrurido/Redactum")
+#> Using GitHub PAT from the git credential store.
+#> Skipping install of 'Redactum' from a github remote, the SHA1 (1b9a3eba) has not changed since last install.
+#>   Use `force = TRUE` to force installation
 ```
 
 ``` r
 library(Redactum)
 ```
 
-# fn_enlista
+The package includes functions specifically designed to aid writing in
+Spanish, as well as functions that support writing in other languages.
+
+# Functions designed to make writing in Spanish easier.
+
+## fn_enlista()
 
 It is a function that inserts commas between the elements of a vector,
 using ‘and’ for the last element unless the last word begins with ‘i’ or
@@ -59,7 +75,7 @@ letter ‘y’ is placed before the final word.
 
 The function requires defining:
 
-    * x A vector that contains multiple elements.
+    x A vector that contains multiple elements.
 
 It returns A vector that inserts a comma after each element, adds *y* to
 the last element, and if the last element is a word starting with *i*,
@@ -137,7 +153,9 @@ xx
 #> [1] "Los accidentes geográficos estan numerados como: 345, 678, 123 y 0."
 ```
 
-# n_cient
+# Functions designed to facilitate writing in Spanish and other languages.
+
+## n_cient()
 
 Abbreviated scientific name
 
@@ -195,3 +213,17 @@ n_cient("Hydrolagus spp.")
 n_cient("Hydrolagus spp")
 #> [1] "Hydrolagus spp"
 ```
+
+# Citation
+
+Aguirre-Villaseñor H (2026). Redactum: Redactum: Simplifying the writing
+of manuscripts in Spanish and other languages. R package version 0.1.0,
+<https://macrurido.github.io/Redactum/>.
+
+    @Manual{,
+      title = {Redactum: Redactum: Simplifying the writing of manuscripts in Spanish and other languages},
+      author = {Hugo Aguirre-Villaseñor},
+      year = {2026},
+      note = {R package version 0.1.0},
+      url = {https://macrurido.github.io/Redactum/},
+    }

@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/Redactum.png" align="right" height="140" /></a>
+# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/Redactum.png" align="right" height="80" /></a>
 
 <!-- # pkgname <img src="man/figures/Redactum.png" align="right" /> -->
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -40,13 +40,13 @@ You can install the development version of Redactum from [GitHub](https://github
 using one of the following options:
 
 Using the **pak** package
-``` r
+```{r}
 # install.packages("pak")
 pak::pak("Macrurido/Redactum")
 ```
 or using the **devtools** package
 
-``` r
+```{r}
 library(devtools)
 install_github("Macrurido/Redactum")
 ```
@@ -55,14 +55,18 @@ install_github("Macrurido/Redactum")
 library(Redactum)
 ```
 
-# fn_enlista
+ The package includes functions specifically designed to aid writing in Spanish, as well as functions that support writing in other languages.
+
+# Functions designed to make writing in Spanish easier.
+
+## fn_enlista()
 
 It is a function that inserts commas between the elements of a vector, using 'and' for the last element unless the last word begins with 'i' or 'I', in which case it uses 'e'. In the context of numerical vectors, the letter 'y' is placed before the final word.
 
 
 The function requires defining:
 
-    * x A vector that contains multiple elements.
+    x A vector that contains multiple elements.
 
 It returns A vector that inserts a comma after each element, adds
 *y* to the last element, and if the last element is a word
@@ -124,7 +128,9 @@ xx
 xx <- paste0("Los accidentes geográficos estan numerados como: ", xx,".")
 xx
 ```
-# n_cient
+# Functions designed to facilitate writing in Spanish and other languages.
+
+## n_cient()
 
 Abbreviated scientific name
 
@@ -165,4 +171,14 @@ n_cient("Hydrolagus spp.")
 n_cient("Hydrolagus spp")
 ```
 
+# Citation
 
+Aguirre-Villaseñor H (2026). Redactum: Redactum: Simplifying the writing of manuscripts in Spanish and other languages. R package version 0.1.0, https://macrurido.github.io/Redactum/.
+
+    @Manual{,
+      title = {Redactum: Redactum: Simplifying the writing of manuscripts in Spanish and other languages},
+      author = {Hugo Aguirre-Villaseñor},
+      year = {2026},
+      note = {R package version 0.1.0},
+      url = {https://macrurido.github.io/Redactum/},
+    }

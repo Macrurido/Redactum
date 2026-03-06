@@ -36,6 +36,12 @@ melanophasma.
 The function operates correctly with or without periods in
 abbreviations, such as “sp” or “sp.”
 
+The function requires defining:
+
+    name A character string containing the scientific name.
+    
+It returns a character string containing the abbreviated scientific name.    
+
 ## Examples
 
 Abbreviation used for scientific names.

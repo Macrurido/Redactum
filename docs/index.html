@@ -53,17 +53,11 @@
 <div class="row">
   <main id="main" class="col-md-9"><p>Redactum: Simplifying the writing of manuscripts in Spanish and other languages. ================ Hugo Aguirre Villaseñor 05 marzo 2026</p>
 <div class="section level1">
-<div class="page-header"><h1 id="redactum-">Redactum <a href="https://github.com/Macrurido/Redactum/" class="external-link"><img src="main/figures/Redactum.png" align="right" height="140"></a>
+<div class="page-header"><h1 id="redactum-">Redactum <a href="https://github.com/Macrurido/Redactum/" class="external-link"><img src="reference/figures/Redactum.png" align="right" height="80"></a>
 <a class="anchor" aria-label="anchor" href="#redactum-"></a>
 </h1></div>
-</div>
-<div class="section level1">
-<h1 id="pkgname-">pkgname <img src="main/figures/Redactum.png" align="right"><a class="anchor" aria-label="anchor" href="#pkgname-"></a>
-</h1>
+<!-- # pkgname <img src="man/figures/Redactum.png" align="right" /> -->
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-<blockquote>
-<p>meek-ROPE em el</p>
-</blockquote>
 <p>Shield: <a href="http://creativecommons.org/licenses/by/4.0/" class="external-link"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="CC BY 4.0"></a></p>
 <p>Redactum © 2025 by Hugo Aguirre Villaseñor is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" class="external-link">Creative Commons Attribution 4.0 International License</a>.</p>
 <p><a href="http://creativecommons.org/licenses/by/4.0/" class="external-link"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="CC BY 4.0"></a></p>
@@ -79,22 +73,38 @@
 <p>Using the <strong>pak</strong> package</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu">pak</span><span class="op">(</span><span class="st">"Macrurido/Redactum"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"Macrurido/Redactum"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; → Will update 1 package.</span></span>
+<span><span class="co">#&gt; → Will download 1 package with unknown size.</span></span>
+<span><span class="co">#&gt; + Redactum 0.1.0 → 0.1.0 [bld][cmp][dl] (GitHub: 1b9a3eb)</span></span>
+<span><span class="co">#&gt; ℹ Getting 1 pkg with unknown size</span></span>
+<span><span class="co">#&gt; ✔ Cached copy of Redactum 0.1.0 (source) is the latest build</span></span>
+<span><span class="co">#&gt; ✔ Installed Redactum 0.1.0 (github::Macrurido/Redactum@1b9a3eb) (84ms)</span></span>
+<span><span class="co">#&gt; ✔ 1 pkg: upd 1 [5.6s]</span></span></code></pre></div>
 <p>or using the <strong>devtools</strong> package</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://devtools.r-lib.org/" class="external-link">devtools</a></span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"Macrurido/Redactum"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"Macrurido/Redactum"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Using GitHub PAT from the git credential store.</span></span>
+<span><span class="co">#&gt; Skipping install of 'Redactum' from a github remote, the SHA1 (1b9a3eba) has not changed since last install.</span></span>
+<span><span class="co">#&gt;   Use `force = TRUE` to force installation</span></span></code></pre></div>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://macrurido.github.io/Redactum/">Redactum</a></span><span class="op">)</span></span></code></pre></div>
+<p>The package includes functions specifically designed to aid writing in Spanish, as well as functions that support writing in other languages.</p>
 </div>
 </div>
 <div class="section level1">
-<h1 id="fn_enlista">fn_enlista<a class="anchor" aria-label="anchor" href="#fn_enlista"></a>
+<h1 id="functions-designed-to-make-writing-in-spanish-easier">Functions designed to make writing in Spanish easier.<a class="anchor" aria-label="anchor" href="#functions-designed-to-make-writing-in-spanish-easier"></a>
 </h1>
+<div class="section level2">
+<h2 id="fn_enlista">fn_enlista()<a class="anchor" aria-label="anchor" href="#fn_enlista"></a>
+</h2>
 <p>It is a function that inserts commas between the elements of a vector, using ‘and’ for the last element unless the last word begins with ‘i’ or ‘I’, in which case it uses ‘e’. In the context of numerical vectors, the letter ‘y’ is placed before the final word.</p>
 <p>The function requires defining:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="sc">*</span> x A vector that contains multiple elements.</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>x A vector that contains multiple elements.</span></code></pre></div>
 <p>It returns A vector that inserts a comma after each element, adds <em>y</em> to the last element, and if the last element is a word starting with <em>i</em>, it instead adds <em>e</em>.</p>
+</div>
 <div class="section level2">
 <h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
 </h2>
@@ -156,12 +166,16 @@
 </div>
 </div>
 <div class="section level1">
-<h1 id="n_cient">n_cient<a class="anchor" aria-label="anchor" href="#n_cient"></a>
+<h1 id="functions-designed-to-facilitate-writing-in-spanish-and-other-languages">Functions designed to facilitate writing in Spanish and other languages.<a class="anchor" aria-label="anchor" href="#functions-designed-to-facilitate-writing-in-spanish-and-other-languages"></a>
 </h1>
+<div class="section level2">
+<h2 id="n_cient">n_cient()<a class="anchor" aria-label="anchor" href="#n_cient"></a>
+</h2>
 <p>Abbreviated scientific name</p>
 <p>The abbreviated name is derived from the scientific name. To create the abbreviation, the first letter of the genus is taken, written in uppercase, and followed by a period. The specific name is added after a space in the scientific name.</p>
 <p>Within the function, a condition is established. If the scientific name refers to a species that is not specified under a particular genus, such as Hydrolagus sp., or to multiple species within a genus, like Hydrolagus spp., the name will not be abbreviated. However, if the scientific name designates a specific species, it will be modified; for instance, Hydrolagus melanophasma will be abbreviated to H. melanophasma.</p>
 <p>The function operates correctly with or without periods in abbreviations, such as “sp” or “sp.”</p>
+</div>
 <div class="section level2">
 <h2 id="examples-1">Examples<a class="anchor" aria-label="anchor" href="#examples-1"></a>
 </h2>
@@ -192,6 +206,18 @@
 <span><span class="fu"><a href="reference/n_cient.html">n_cient</a></span><span class="op">(</span><span class="st">"Hydrolagus spp"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "Hydrolagus spp"</span></span></code></pre></div>
 </div>
+</div>
+<div class="section level1">
+<h1 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
+</h1>
+<p>Aguirre-Villaseñor H (2026). Redactum: Redactum: Simplifying the writing of manuscripts in Spanish and other languages. R package version 0.1.0, <a href="https://macrurido.github.io/Redactum/" class="uri">https://macrurido.github.io/Redactum/</a>.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="sc">@</span>Manual{,</span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>  title <span class="ot">=</span> {Redactum<span class="sc">:</span> Redactum<span class="sc">:</span> Simplifying the writing of manuscripts <span class="cf">in</span> Spanish and other languages},</span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a>  author <span class="ot">=</span> {Hugo Aguirre<span class="sc">-</span>Villaseñor},</span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a>  year <span class="ot">=</span> {<span class="dv">2026</span>},</span>
+<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a>  note <span class="ot">=</span> {R package version <span class="dv">0</span>.<span class="fl">1.0</span>},</span>
+<span id="cb13-6"><a href="#cb13-6" tabindex="-1"></a>  url <span class="ot">=</span> {https<span class="sc">:</span><span class="er">//</span>macrurido.github.io<span class="sc">/</span>Redactum<span class="sc">/</span>},</span>
+<span id="cb13-7"><a href="#cb13-7" tabindex="-1"></a>}</span></code></pre></div>
 </div>
 
   </main><aside class="col-md-3"><div class="license">
