@@ -63,11 +63,6 @@ library(Redactum)
 
 It is a function that inserts commas between the elements of a vector, using 'and' for the last element unless the last word begins with 'i' or 'I', in which case it uses 'e'. In the context of numerical vectors, the letter 'y' is placed before the final word.
 
-
-The function requires defining:
-
-    x A vector that contains multiple elements.
-
 It returns A vector that inserts a comma after each element, adds
 *y* to the last element, and if the last element is a word
 starting with *i*, it instead adds *e*.
