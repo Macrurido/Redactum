@@ -37,14 +37,6 @@ Using the **pak** package
 ``` r
 # install.packages("pak")
 pak::pak("Macrurido/Redactum")
-#> 
-#> → Will update 1 package.
-#> → Will download 1 package with unknown size.
-#> + Redactum 0.1.0 → 0.1.0 [bld][cmp][dl] (GitHub: aefd367)
-#> ℹ Getting 1 pkg with unknown size
-#> ✔ Cached copy of Redactum 0.1.0 (source) is the latest build
-#> ✔ Installed Redactum 0.1.0 (github::Macrurido/Redactum@aefd367) (86ms)
-#> ✔ 1 pkg: upd 1 [5.8s]
 ```
 
 or using the **devtools** package
@@ -52,9 +44,6 @@ or using the **devtools** package
 ``` r
 library(devtools)
 install_github("Macrurido/Redactum")
-#> Using GitHub PAT from the git credential store.
-#> Skipping install of 'Redactum' from a github remote, the SHA1 (aefd3672) has not changed since last install.
-#>   Use `force = TRUE` to force installation
 ```
 
 ``` r
@@ -66,7 +55,7 @@ Spanish, as well as functions that support writing in other languages.
 
 # Functions designed to make writing in Spanish easier.
 
-## fn_enlista()
+## fn_enlista
 
 It is a function that inserts commas between the elements of a vector,
 using ‘and’ for the last element unless the last word begins with ‘i’ or
@@ -81,81 +70,9 @@ It returns A vector that inserts a comma after each element, adds *y* to
 the last element, and if the last element is a word starting with *i*,
 it instead adds *e*.
 
-## Examples
-
-The last word does not begin with “I”.
-
-``` r
-x <- c("Pedro", "Juan", "Mario", "Emilio", "Iker", "Hugo")
-xx <- Redactum::fn_enlista(x)
-xx
-#> [1] "Pedro, Juan, Mario, Emilio, Iker y Hugo"
-
-# Example: combine it with paste0().
-xx <- paste0("Los amigos de Armando son ", xx,".")
-xx
-#> [1] "Los amigos de Armando son Pedro, Juan, Mario, Emilio, Iker y Hugo."
-```
-
-The last word begins with “I”.
-
-``` r
-x <- c("Pedro", "Juan", "Mario", "Emilio", "Iker")
-xx <- Redactum::fn_enlista(x)
-xx
-#> [1] "Pedro, Juan, Mario, Emilio e Iker"
-
-# Example: combine it with paste0().
-xx <- paste0("Los amigos de Armando son ", xx,".")
-xx
-#> [1] "Los amigos de Armando son Pedro, Juan, Mario, Emilio e Iker."
-```
-
-The last word begins with “i”.
-
-``` r
-x <- c("península", "cordillera", "isla")
-xx <- Redactum::fn_enlista(x)
-xx
-#> [1] "península, cordillera e isla"
-
-# Example: combine it with paste0().
-xx <- paste0("Los accidentes geográficos encontrados son: ", xx,".")
-xx
-#> [1] "Los accidentes geográficos encontrados son: península, cordillera e isla."
-```
-
-The last word starts with a character that is not a letter.
-
-``` r
-x <- c("península", "cordillera", "123")
-xx <- Redactum::fn_enlista(x)
-xx
-#> [1] "península, cordillera y 123"
-
-# Example: combine it with paste0().
-xx <- paste0("Los accidentes geográficos encontrados son: ", xx,".")
-xx
-#> [1] "Los accidentes geográficos encontrados son: península, cordillera y 123."
-```
-
-The vector consists of numeric values.
-
-``` r
-x <- c(345, 678, 123, 0)
-xx <- Redactum::fn_enlista(x)
-xx
-#> [1] "345, 678, 123 y 0"
-
-# Example: combine it with paste0().
-xx <- paste0("Los accidentes geográficos estan numerados como: ", xx,".")
-xx
-#> [1] "Los accidentes geográficos estan numerados como: 345, 678, 123 y 0."
-```
-
 # Functions designed to facilitate writing in Spanish and other languages.
 
-## n_cient()
+## n_cient
 
 Abbreviated scientific name
 
@@ -174,45 +91,6 @@ melanophasma.
 
 The function operates correctly with or without periods in
 abbreviations, such as “sp” or “sp.”
-
-## Examples
-
-Abbreviation used for scientific names.
-
-``` r
-n_cient("Homo sapiens")
-#> [1] "H. sapiens"
-
-name <- "Hydrolagus melanophasma"
-n_cient(name)
-#> [1] "H. melanophasma"
-```
-
-Unspecified species within a genus, using the abbreviation “sp.” or “sp”
-with or without a period.
-
-``` r
-# With a period
-n_cient("Hydrolagus sp.")
-#> [1] "Hydrolagus sp."
-
-# Without a period
-n_cient("Hydrolagus sp")
-#> [1] "Hydrolagus sp"
-```
-
-Unspecified species within a genus, using the abbreviation “spp.” or
-“spp” with or without a period.
-
-``` r
-# With a period
-n_cient("Hydrolagus spp.")
-#> [1] "Hydrolagus spp."
-
-# Without a period
-n_cient("Hydrolagus spp")
-#> [1] "Hydrolagus spp"
-```
 
 # Citation
 
