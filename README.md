@@ -2,7 +2,7 @@ Redactum: Simplifying the writing of manuscripts in Spanish and other
 languages.
 ================
 Hugo Aguirre Villaseñor
-05 marzo 2026
+10 marzo 2026
 
 # Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/Redactum.png" align="right" height="180" /></a>
 
@@ -101,3 +101,7 @@ of manuscripts in Spanish and other languages. R package version 0.1.0,
       note = {R package version 0.1.0},
       url = {https://macrurido.github.io/Redactum/},
     }
+
+<p style="font-size:14pt; color:blue; text-align:justify;">
+
+</p>

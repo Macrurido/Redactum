@@ -83,8 +83,8 @@ The function operates correctly with or without periods in abbreviations, such a
 
 Aguirre-Villaseñor H (2026). Redactum: Redactum: Simplifying the writing of manuscripts in Spanish and other languages. R package version 0.1.0, https://macrurido.github.io/Redactum/.
 
-    @Manual{,
-      title = {Redactum: Redactum: Simplifying the writing of manuscripts in Spanish and other languages},
+    @Manual{Redactum,
+      title = {Redactum: Simplifying the writing of manuscripts in Spanish and other languages},
       author = {Hugo Aguirre-Villaseñor},
       year = {2026},
       note = {R package version 0.1.0},
