@@ -1,8 +1,8 @@
 ---
-title: "n_cient {Redactum}"
+title: "ncient {Redactum}"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{n_cient}
+  %\VignetteIndexEntry{ncient}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -47,10 +47,10 @@ It returns a character string containing the abbreviated scientific name.
 Abbreviation used for scientific names.
 
 ```{r name}
-n_cient("Homo sapiens")
+ncient("Homo sapiens")
 
 name <- "Hydrolagus melanophasma"
-n_cient(name)
+ncient(name)
 ```
 
 Unspecified species within a genus, using the abbreviation “sp.” or “sp”
@@ -58,10 +58,10 @@ with or without a period.
 
 ```{r sp}
 # With a period
-n_cient("Hydrolagus sp.")
+ncient("Hydrolagus sp.")
 
 # Without a period
-n_cient("Hydrolagus sp")
+ncient("Hydrolagus sp")
 ```
 
 Unspecified species within a genus, using the abbreviation “spp.” or
@@ -69,9 +69,9 @@ Unspecified species within a genus, using the abbreviation “spp.” or
 
 ```{r spp}
 # With a period
-n_cient("Hydrolagus spp.")
+ncient("Hydrolagus spp.")
 
 # Without a period
-n_cient("Hydrolagus spp")
+ncient("Hydrolagus spp")
 ```
 

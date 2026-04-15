@@ -5,7 +5,7 @@ Version: 0.1.0
 Authors@R: c(
     person(
       "Hugo", "Aguirre-Villaseñor",
-      email = "hugo.aguirre@imipas.gob.mx",
+      email = "macrurido@gmail.com",
       role = c("aut", "cre"),
       comment = c(ORCID = "0000-0002-9846-0915")
     )
@@ -19,6 +19,8 @@ Suggests:
     knitr,
     rmarkdown,
     testthat (>= 3.0.0)
+Imports:
+    usethis (>= 3.2.1)
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 URL: https://macrurido.github.io/Redactum/, https://macrurido.github.io/Redactum/

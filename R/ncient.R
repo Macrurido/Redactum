@@ -1,4 +1,4 @@
-#' n_cient
+#' ncient
 #'
 #' Abbreviated scientific name
 #'
@@ -14,21 +14,21 @@
 #'
 #' @examples
 #'
-#' n_cient("Homo sapiens")
+#' ncient("Homo sapiens")
 #'
 #' name <- "Hydrolagus melanophasma"
-#' n_cient(name)
+#' ncient(name)
 #'
 #' ## Example: Using the abbreviation "sp" without a period.
 #' name <- "Hydrolagus sp"
-#' n_cient(name)
+#' ncient(name)
 #'
 #' ## Example: Using the abbreviation "spp." with a period.
 #' name <- "Hydrolagus spp."
-#' n_cient(name)
+#' ncient(name)
 #'
 #' @export
-n_cient <- function(name){
+ncient <- function(name){
   name_split <- strsplit(name, split = " ")
   genus <- substr(name, 1, 1)
   species <- name_split[[1]][2]

@@ -1,4 +1,4 @@
-#' fn_enlista
+#' enlista
 #'
 # It is a function that inserts commas between the elements of a vector, using 'and' for the last element unless the last word begins with 'i' or 'I', in which case it uses 'e'. In the context of numerical vectors, the letter 'y' is placed before the final word.
 #'
@@ -10,34 +10,36 @@
 #'  'y' to the last element, and if the last element is a word
 #'  starting with 'i', it instead adds 'e'.
 #'
+#' @import usethis
+#'
 #' @examples
 #'  \dontrun{
 #'  # The last word does not begin with "I".
 #'  x <- c("Pedro", "Juan", "Mario", "Emilio", "Iker", "Hugo")
-#'  xx <- fn_enlista(x)
+#'  xx <- enlista(x)
 #'
 #'  # Combine it with paste0().
 #'  paste0("Los amigos de Armando son ", xx,".")
 #'
 #'  # The last word begins  with "I".
 #'  x <- c("Pedro", "Juan", "Mario", "Emilio", "Iker")
-#'  xx <- fn_enlista(x)
+#'  xx <- enlista(x)
 #'
 #'  # The last word begins  with "i".
 #'  x <- c("península", "cordillera", "isla")
-#'  xx <- fn_enlista(x)
+#'  xx <- enlista(x)
 #'
 #'  # The last word starts with a character that is not a letter.
 #'  x <- c("península", "cordillera", "123")
-#'  xx <- fn_enlista(x)
+#'  xx <- enlista(x)
 #'
 #'  # The vector consists of numeric values.
 #'    x <- c(345, 678, 123, 0)
-#'    xx <- fn_enlista(x)
+#'    xx <- enlista(x)
 #'  }
 #'
 #' @export
-fn_enlista <- function(x){
+enlista <- function(x){
                           if(!grepl("^[iI]", x[length(x)])|
                               grepl("^[0-9]", x[length(x)]))
                             {

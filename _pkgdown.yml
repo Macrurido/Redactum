@@ -3,14 +3,20 @@ template:
   bootstrap: 5
 
 reference:
-- title: Functions for Spanish language.
+- title: Simplifying the writing of manuscripts in Spanish and other languages.
   desc: >
-    Functions designed to make writing in Spanish easier.
+    Functions designed to make writing easier.
   contents:
-  - fn_enlista
+  - enlista
 
-- title: Functions for Spanish and other languages.
+- title: Simplifying the writing of manuscripts in Spanish and other languages.
   desc: >
-    Functions designed to facilitate writing in Spanish and other languages.
+    Functions designed to make writing easier.
   contents:
-  - n_cient
+  - ncient
+
+- title: Simplifying the writing of manuscripts in Spanish and other languages.
+  desc: >
+    Functions designed to make writing easier.
+  contents:
+  - nnum

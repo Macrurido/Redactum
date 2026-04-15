@@ -2,7 +2,7 @@ Redactum: Simplifying the writing of manuscripts in Spanish and other
 languages.
 ================
 Hugo Aguirre Villaseñor
-29 marzo 2026
+14 abril 2026
 
 # Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/Redactum.png" align="right" height="180" /></a>
 
@@ -55,7 +55,7 @@ Spanish, as well as functions that support writing in other languages.
 
 # Functions designed to make writing in Spanish easier.
 
-## fn_enlista
+## enlista
 
 It is a function that inserts commas between the elements of a vector,
 using ‘and’ for the last element unless the last word begins with ‘i’ or
@@ -68,7 +68,7 @@ it instead adds *e*.
 
 # Functions designed to facilitate writing in Spanish and other languages.
 
-## n_cient
+## ncient
 
 Abbreviated scientific name
 
@@ -88,10 +88,19 @@ melanophasma.
 The function operates correctly with or without periods in
 abbreviations, such as “sp” or “sp.”
 
+## nnum
+
+This function returns the name of a given number, specifically for
+numbers ranging from 0 to 10.
+
+It uses an array that defines the names of the numbers from one to ten,
+including zero at the end. The user specifies the names of the numbers
+in the chosen language.
+
 # Citation
 
-Aguirre-Villaseñor H (2026). Redactum: Redactum: Simplifying the writing
-of manuscripts in Spanish and other languages. R package version 0.1.0,
+Aguirre-Villaseñor H (2026). Redactum: Simplifying the writing of
+manuscripts in Spanish and other languages. R package version 0.1.0,
 <https://macrurido.github.io/Redactum/>.
 
     @Manual{Redactum,

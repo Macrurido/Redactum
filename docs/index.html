@@ -35,8 +35,9 @@
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
-<li><a class="dropdown-item" href="articles/fn_enlista.html">fn_enlista {Redactum}</a></li>
-    <li><a class="dropdown-item" href="articles/n_cient.html">n_cient {Redactum}</a></li>
+<li><a class="dropdown-item" href="articles/enlista.html">enlista {Redactum}</a></li>
+    <li><a class="dropdown-item" href="articles/ncient.html">ncient {Redactum}</a></li>
+    <li><a class="dropdown-item" href="articles/nnum.html">nnum {Redactum}</a></li>
   </ul>
 </li>
       </ul>
@@ -51,7 +52,7 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9"><p>Redactum: Simplifying the writing of manuscripts in Spanish and other languages. ================ Hugo Aguirre Villaseñor 10 marzo 2026</p>
+  <main id="main" class="col-md-9"><p>Redactum: Simplifying the writing of manuscripts in Spanish and other languages. ================ Hugo Aguirre Villaseñor 14 abril 2026</p>
 <div class="section level1">
 <div class="page-header"><h1 id="redactum-">Redactum <a href="https://github.com/Macrurido/Redactum/" class="external-link"><img src="reference/figures/Redactum.png" align="right" height="180"></a>
 <a class="anchor" aria-label="anchor" href="#redactum-"></a>
@@ -87,7 +88,7 @@
 <h1 id="functions-designed-to-make-writing-in-spanish-easier">Functions designed to make writing in Spanish easier.<a class="anchor" aria-label="anchor" href="#functions-designed-to-make-writing-in-spanish-easier"></a>
 </h1>
 <div class="section level2">
-<h2 id="fn_enlista">fn_enlista<a class="anchor" aria-label="anchor" href="#fn_enlista"></a>
+<h2 id="enlista">enlista<a class="anchor" aria-label="anchor" href="#enlista"></a>
 </h2>
 <p>It is a function that inserts commas between the elements of a vector, using ‘and’ for the last element unless the last word begins with ‘i’ or ‘I’, in which case it uses ‘e’. In the context of numerical vectors, the letter ‘y’ is placed before the final word.</p>
 <p>It returns A vector that inserts a comma after each element, adds <em>y</em> to the last element, and if the last element is a word starting with <em>i</em>, it instead adds <em>e</em>.</p>
@@ -97,27 +98,31 @@
 <h1 id="functions-designed-to-facilitate-writing-in-spanish-and-other-languages">Functions designed to facilitate writing in Spanish and other languages.<a class="anchor" aria-label="anchor" href="#functions-designed-to-facilitate-writing-in-spanish-and-other-languages"></a>
 </h1>
 <div class="section level2">
-<h2 id="n_cient">n_cient<a class="anchor" aria-label="anchor" href="#n_cient"></a>
+<h2 id="ncient">ncient<a class="anchor" aria-label="anchor" href="#ncient"></a>
 </h2>
 <p>Abbreviated scientific name</p>
 <p>The abbreviated name is derived from the scientific name. To create the abbreviation, the first letter of the genus is taken, written in uppercase, and followed by a period. The specific name is added after a space in the scientific name.</p>
 <p>Within the function, a condition is established. If the scientific name refers to a species that is not specified under a particular genus, such as Hydrolagus sp., or to multiple species within a genus, like Hydrolagus spp., the name will not be abbreviated. However, if the scientific name designates a specific species, it will be modified; for instance, Hydrolagus melanophasma will be abbreviated to H. melanophasma.</p>
 <p>The function operates correctly with or without periods in abbreviations, such as “sp” or “sp.”</p>
 </div>
+<div class="section level2">
+<h2 id="nnum">nnum<a class="anchor" aria-label="anchor" href="#nnum"></a>
+</h2>
+<p>This function returns the name of a given number, specifically for numbers ranging from 0 to 10.</p>
+<p>It uses an array that defines the names of the numbers from one to ten, including zero at the end. The user specifies the names of the numbers in the chosen language.</p>
+</div>
 </div>
 <div class="section level1">
 <h1 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
 </h1>
-<p>Aguirre-Villaseñor H (2026). Redactum: Redactum: Simplifying the writing of manuscripts in Spanish and other languages. R package version 0.1.0, <a href="https://macrurido.github.io/Redactum/" class="uri">https://macrurido.github.io/Redactum/</a>.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="sc">@</span>Manual{,</span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>  title <span class="ot">=</span> {Redactum<span class="sc">:</span> Redactum<span class="sc">:</span> Simplifying the writing of manuscripts <span class="cf">in</span> Spanish and other languages},</span>
+<p>Aguirre-Villaseñor H (2026). Redactum: Simplifying the writing of manuscripts in Spanish and other languages. R package version 0.1.0, <a href="https://macrurido.github.io/Redactum/" class="uri">https://macrurido.github.io/Redactum/</a>.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="sc">@</span>Manual{Redactum,</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>  title <span class="ot">=</span> {Redactum<span class="sc">:</span> Simplifying the writing of manuscripts <span class="cf">in</span> Spanish and other languages},</span>
 <span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>  author <span class="ot">=</span> {Hugo Aguirre<span class="sc">-</span>Villaseñor},</span>
 <span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>  year <span class="ot">=</span> {<span class="dv">2026</span>},</span>
 <span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>  note <span class="ot">=</span> {R package version <span class="dv">0</span>.<span class="fl">1.0</span>},</span>
 <span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a>  url <span class="ot">=</span> {https<span class="sc">:</span><span class="er">//</span>macrurido.github.io<span class="sc">/</span>Redactum<span class="sc">/</span>},</span>
 <span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a>}</span></code></pre></div>
-<p style="font-size:14pt; color:blue; text-align:justify;">
-</p>
 </div>
 
   </main><aside class="col-md-3"><div class="license">
