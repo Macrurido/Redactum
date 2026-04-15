@@ -2,21 +2,3 @@ url: https://macrurido.github.io/Redactum/
 template:
   bootstrap: 5
 
-reference:
-- title: Simplifying the writing of manuscripts in Spanish and other languages.
-  desc: >
-    Functions designed to make writing easier.
-  contents:
-  - enlista
-
-- title: Simplifying the writing of manuscripts in Spanish and other languages.
-  desc: >
-    Functions designed to make writing easier.
-  contents:
-  - ncient
-
-- title: Simplifying the writing of manuscripts in Spanish and other languages.
-  desc: >
-    Functions designed to make writing easier.
-  contents:
-  - nnum
