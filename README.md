@@ -4,7 +4,7 @@ languages.
 Hugo Aguirre Villaseñor
 14 abril 2026
 
-# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/Redactum.png" align="right" height="180" /></a>
+# Redactum <a href="https://macrurido.github.io/Redactum/"><img src="vignettes/figures/Redactum.png" align="right" height="180" /></a>
 
 <!-- # pkgname <img src="man/figures/Redactum.png" align="right" /> -->
 
