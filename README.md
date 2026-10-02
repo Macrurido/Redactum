@@ -2,9 +2,7 @@ Redactum: Simplifying the writing of manuscripts in Spanish and other
 languages.
 ================
 Hugo Aguirre Villaseñor
-16 abril 2026
-
-# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/Redactum.png" align="right" height="180" /></a>
+01 octubre 2026
 
 <!-- # pkgname <img src="man/vignettes/Redactum.png" align="right" /> -->
 
@@ -16,6 +14,11 @@ Shield: [![CC BY
 Redactum © 2025 by Hugo Aguirre Villaseñor is licensed under a [Creative
 Commons Attribution 4.0 International
 License](http://creativecommons.org/licenses/by/4.0/).
+
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/Macrurido/Redactum/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Macrurido/Redactum/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 [![CC BY
 4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)

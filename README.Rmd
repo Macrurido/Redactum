@@ -14,7 +14,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Redactum <a href="https://github.com/Macrurido/Redactum/"><img src="man/figures/Redactum.png" align="right" height="180" /></a>
 
 <!-- # pkgname <img src="man/vignettes/Redactum.png" align="right" /> -->
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -23,6 +22,10 @@ Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
 Redactum © 2025 by Hugo Aguirre Villaseñor is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
+
+<!-- badges: start -->
+  [![R-CMD-check](https://github.com/Macrurido/Redactum/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Macrurido/Redactum/actions/workflows/R-CMD-check.yaml)
+  <!-- badges: end -->
 
 [![CC BY 4.0][cc-by-image]][cc-by]
 

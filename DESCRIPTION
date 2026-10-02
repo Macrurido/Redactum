@@ -14,7 +14,6 @@ Description: This package offers tools to streamline the writing of manuscripts 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.3
 Suggests: 
     knitr,
     rmarkdown,
@@ -27,3 +26,4 @@ Config/testthat/edition: 3
 VignetteBuilder: knitr
 URL: https://macrurido.github.io/Redactum/, https://macrurido.github.io/Redactum/
 Config/Needs/website: rmarkdown
+Config/roxygen2/version: 8.1.0

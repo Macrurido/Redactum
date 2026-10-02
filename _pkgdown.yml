@@ -2,3 +2,15 @@ url: https://macrurido.github.io/Redactum/
 template:
   bootstrap: 5
 
+reference:
+- title: Spanish
+  desc: >
+    Functions designed to make writing in Spanish easier.
+  contents:
+    - enlista
+- title: Any languages
+  desc: >
+    Functions designed to facilitate writing in Spanish and other languages.
+  contents:
+    - ncient
+    - nnum
