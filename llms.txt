@@ -1,7 +1,7 @@
 # Functions designed to make writing in Spanish easier.
 
 Redactum: Simplifying the writing of manuscripts in Spanish and other
-languages. ================ Hugo Aguirre Villaseñor 01 octubre 2026
+languages. ================ Hugo Aguirre Villaseñor 02 octubre 2026
 
 Shield: [![CC BY
 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
