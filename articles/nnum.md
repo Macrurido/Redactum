@@ -1,6 +1,7 @@
 # nnum {Redactum}
 
 ``` r
+
 library(Redactum)
 ```
 
@@ -25,6 +26,7 @@ It returns the name of a number in the language specified by the user.
 Return the name associated with number 2 in English.
 
 ``` r
+
 nnames <- c("one", "two", "three",
             "four", "five", "six",
             "seven", "eight", "nine",
@@ -38,6 +40,7 @@ nnum(x,nnames)
 Return the name associated with number 0 in English.
 
 ``` r
+
 nnames <- c("one", "two", "three",
             "four", "five", "six",
             "seven", "eight", "nine",
@@ -51,6 +54,7 @@ nnum(x,nnames)
 Return the name associated with number 2 in Spanish.
 
 ``` r
+
 nnames <- c("uno", "dos", "tres",
             "cuatro", "cinco", "seis",
             "siete", "ocho", "nueve",
@@ -64,6 +68,7 @@ nnum(x,nnames)
 Return the name associated with number 0 in Spanish.
 
 ``` r
+
 nnames <- c("uno", "dos", "tres",
             "cuatro", "cinco", "seis",
             "siete", "ocho", "nueve",

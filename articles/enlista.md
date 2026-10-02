@@ -1,6 +1,7 @@
 # enlista {Redactum}
 
 ``` r
+
 library(Redactum)
 ```
 
@@ -22,6 +23,7 @@ it instead adds *e*.
 The last word does not begin with “I”.
 
 ``` r
+
 x <- c("Pedro", "Juan", "Mario", "Emilio", "Iker", "Hugo")
 xx <- Redactum::enlista(x)
 xx
@@ -36,6 +38,7 @@ xx
 The last word begins with “I”.
 
 ``` r
+
 x <- c("Pedro", "Juan", "Mario", "Emilio", "Iker")
 xx <- Redactum::enlista(x)
 xx
@@ -50,6 +53,7 @@ xx
 The last word begins with “i”.
 
 ``` r
+
 x <- c("península", "cordillera", "isla")
 xx <- Redactum::enlista(x)
 xx
@@ -64,6 +68,7 @@ xx
 The last word starts with a character that is not a letter.
 
 ``` r
+
 x <- c("península", "cordillera", "123")
 xx <- Redactum::enlista(x)
 xx
@@ -78,6 +83,7 @@ xx
 The vector consists of numeric values.
 
 ``` r
+
 x <- c(345, 678, 123, 0)
 xx <- Redactum::enlista(x)
 xx

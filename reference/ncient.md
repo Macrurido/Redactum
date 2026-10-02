@@ -39,6 +39,7 @@ abbreviations, such as "sp" or "sp."
 ## Examples
 
 ``` r
+
 ncient("Homo sapiens")
 #> [1] "H. sapiens"
 

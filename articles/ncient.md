@@ -1,6 +1,7 @@
 # ncient {Redactum}
 
 ``` r
+
 library(Redactum)
 ```
 
@@ -34,6 +35,7 @@ name.
 Abbreviation used for scientific names.
 
 ``` r
+
 ncient("Homo sapiens")
 #> [1] "H. sapiens"
 
@@ -46,6 +48,7 @@ Unspecified species within a genus, using the abbreviation “sp.” or “sp”
 with or without a period.
 
 ``` r
+
 # With a period
 ncient("Hydrolagus sp.")
 #> [1] "Hydrolagus sp."
@@ -59,6 +62,7 @@ Unspecified species within a genus, using the abbreviation “spp.” or
 “spp” with or without a period.
 
 ``` r
+
 # With a period
 ncient("Hydrolagus spp.")
 #> [1] "Hydrolagus spp."
