@@ -24,7 +24,8 @@ Redactum © 2025 by Hugo Aguirre Villaseñor is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
 
 <!-- badges: start -->
-  [![R-CMD-check](https://github.com/Macrurido/Redactum/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Macrurido/Redactum/actions/workflows/R-CMD-check.yaml)
+  [![R-CMD-check](https://github.com/Macrurido/Redactum/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Macrurido/Redactum/actions/workflows/R-CMD-check.yaml){.pkgdown-devel}
+  [![Codecov test coverage](https://codecov.io/gh/r-lib/pkgdown/graph/badge.svg)](https://app.codecov.io/gh/r-lib/pkgdown)
   <!-- badges: end -->
 
 [![CC BY 4.0][cc-by-image]][cc-by]
